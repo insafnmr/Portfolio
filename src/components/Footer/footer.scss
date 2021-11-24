@@ -1,0 +1,44 @@
+.footer {
+    position: relative;
+    margin-top: 20px;
+    background: #EF233C;
+
+    .copyright {
+        position: relative;
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 1px;
+            top: 0;
+            left: 25%;
+            background: rgba(256, 256, 256, .2);
+        }
+
+        p {
+            margin: 0;
+            color: #ffffff;
+
+            a {
+                color: #ffffff;
+                font-weight: 600;
+
+                &:hover {
+                    color: #414141;
+                }
+            }
+        }
+
+        .col-md-6:last-child {
+            p {
+                text-align: right;
+            }
+        }
+    }
+}
+

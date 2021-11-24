@@ -1,0 +1,22 @@
+@mixin mobile {
+    @media (max-width:768px){
+        @content
+    }
+}
+
+.listProjects {
+    font-size: 14px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+  
+    @include mobile{
+      margin-right: 20px;
+    }
+  
+    &.active {
+      background-color: #EF233C;
+      color: white;
+    }
+  }
